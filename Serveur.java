@@ -9,7 +9,7 @@ public class Serveur {
 
 		Texte dis = new Texte();
 		ServiceTexte rd = (ServiceTexte) UnicastRemoteObject.exportObject(dis, 0);
-		Registry reg = LocateRegistry.getRegistry(Integer.parseInt(args[0]);
+		Registry reg = LocateRegistry.getRegistry(Integer.parseInt(args[0]));
 		reg.rebind("Phrases", rd);
 		System.out.println("Lancement du serveur");
 		System.out.println("Seveur en attente");

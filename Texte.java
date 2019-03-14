@@ -35,6 +35,7 @@ public class Texte implements Serializable, ServiceTexte {
 
 	public void enregistrerNoeud(ServiceDistributeur st) throws RemoteException {
 		this.ldis.add(st);
+		System.out.println("Noeud:"+ st + " s'est connecter");
 	}
 
 	
